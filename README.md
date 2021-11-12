@@ -12,7 +12,7 @@ Such analysis could provide readers with more insights and background on a quote
 2. How to define a similarity between politicians ? Can we derive such a measure of similarity ?
 3. According to this definition, do speakers with the same positionning show a higher level of similarity? 
 4. Clustering the speakers based on this measure, do these clusters match with the ideologic left/right separation ? 
-5. Through time, how the distance between these cluster evolve ? 
+5. Through time, how the distance between these cluster evolve ? Can we relate this evolution to some major historic events ?
 6. How does the politicians speech vary depending on the educational degree?
 
 ## Additional Datasets
@@ -28,7 +28,7 @@ First, as we were dealing with a huge file from Quotebank, our first objective w
 In order to enrich our dataset, we decided to fetch the data from the additional dataset Wikidata. The objective was to get the country, the occupation, the political party, and the academic degree of each quotation’s speaker. This was maybe the most challenging part of the preprocessing, as we had to find a solution which does not lead to a huge runtime. The first option considered was to use the API of Wikidata, using the QwikiData library. Unfortunately, even tough it was a feasible solution in theory, this was leading to unfeasible runtime (many hours). The second option (also not feasible) was based on a merge of the data frames ( from Wikidata and QuoteBank).  The third (and last) one was based on the observation that qIDs were unique values, and could then be considered as an index. We then kept only the politicians, as it was the only need of our topic. That way, this enabled to filter out the quotes which were not related to a politician, as mentioned above. Other difficulties were met, namely when finding many ids for one speaker. In order to fix that, we considered only the first id. 
   
 
-Finaly, in order to get closer to the data, we decided to do some visualisation, namely the distribution of the political parties over the quoters, and some ratios.
+Finally, in order to get closer to the data, we decided to do some visualisation, namely the distribution of the political parties over the quoters, and some ratios.
 
 Having the preprocessing step, we will now use Natural Language Processing (NLP) to extract information from the quotes. After this, we will cluster the quotes in order to see if we get different clusters for left and right wings or, on the contrary, if we discover that there is no real difference between these ideologies.
 
@@ -39,8 +39,8 @@ Having the preprocessing step, we will now use Natural Language Processing (NLP)
 * 19 novembre : Understand the different NLP techniques and choose a similarity metric based on that.
 * 26 novembre : Apply the NLP and the clustering.
 * 3 decembre : Distance evolution through time between these cluster.
-* 10 decembre  : Educational degree.
-* 17 decembre : Conclusion.
+* 10 decembre  : Educational degree analysis.
+* 15 decembre : Internal deadline, feedback and last updates.
 
 ## Team Organization 
 

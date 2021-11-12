@@ -15,10 +15,10 @@ Such analysis could provide readers with more insights and background on a quote
 5. Through time, how the distance between these cluster evolve ? 
 6. How does the politicians speech vary depending on the educational degree?
 
-## Proposed Datasets
-1. [Quotebank](https://quotebank.dlab.tools). This is the dataset from the course that will provide us speaker-attributed quotations. 
+## Aditional Datasets
 
-2. [Wikidata](https://www.wikidata.org). This dataset will give us all the informations related to political speakers (political party, education, nationality...).
+In order to get the country, the occupation, the political party, and the academic degree of each quotation’s speaker, we used the additional dataset extracted from Wikidata provided on the class website. This was maybe the most challenging part of the preprocessing, as we had to find a solution which does not lead to a huge runtime. The first option considered was to use the API of Wikidata, using the QwikiData library. Unfortunately, even tough it was a feasible solution in theory, this was leading to unfeasible runtime (many hours). The second option (also not feasible) was based on a merge of the data frames ( from Wikidata and QuoteBank).   The third (and last) one was based on the observation that qIDs were unique values, and could then be considered as an index. We then kept only the politicians, as it was the only need of our topic. 
+
 
 ## Methods
 First, we started by filtering out the unknown in Quotebank dataset and the non-politicians using wikidata among other features. The filtering of only the non-politicians helped us filter our data by 7% for example.

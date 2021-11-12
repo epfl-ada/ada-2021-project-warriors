@@ -21,7 +21,15 @@ show similarities in terms of that definition?
 2. [Wikidata](https://www.wikidata.org). This dataset will give us all the informations related to political speakers (political party, education, nationality...).
 
 ## Methods
-First, we chose to filter the data by removing the unknown speaker, then we only get the quotes that have been said by a politician and we get from wikidata the political party, the educational degree and the nationality of the speaker.
+First,in order to have a managable dataset we chose to filter the quote bank data set in the following way:
+We deleted the quotes that have 'None' speakers, then we deleted the 'quoteID','numOccurrences','probas','urls'and'phase' columns since we do not need them for our analysis.
+In order to enrich our dataset we used the provided speaker_attributes.parquet dataset, for each quote speaker we extracted from this dataset his political party, educational level and nationality. We were also interested in the proportion of American politicians in the dataset so we calculated this variable for each year.
+
+Having Preprocessed our data, our plan is to now use Natural Language processing in order to extract information from the quotes and then cluster the quotes and see if we get different clusters for left and right or if we discover that there is no real difference in the "expressed sentiments"
+
+
+
+we chose to filter the data by removing the unknown speaker, then we only get the quotes that have been said by a politician and we get from wikidata the political party, the educational degree and the nationality of the speaker.
 
 We can remove all quotations that don't have a speaker identified. We can also split the dataset by year, so that our analysis can be run just on a single year.
 

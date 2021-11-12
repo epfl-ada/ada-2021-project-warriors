@@ -21,15 +21,14 @@ show similarities in terms of that definition?
 2. [Wikidata](https://www.wikidata.org). This dataset will give us all the informations related to political speakers (political party, education, nationality...).
 
 ## Methods
-First,in order to have a managable dataset we chose to filter the quote bank data set in the following way:
-We deleted the quotes that have 'None' speakers, then we deleted the 'quoteID','numOccurrences','probas','urls'and'phase' columns since we do not need them for our analysis.
+First, we started by filtering out the unknown in Quotebank dataset and the non-politicians using wikidata among other features. The filtering of only the non-politicians helped us filter our data by 7% for example.
 
-In order to enrich our dataset we first wanted to fetch the information from the wikidata API but we saw that it took too long so we used the provided speaker_attributes.parquet dataset, for each quote speaker we extracted from this dataset his political party, educational level and nationality. We were also interested in the proportion of American politicians in the dataset so we calculated this variable for each year.
+In order to enrich our dataset, we decided to fetch the information from the wikidata API but, as it was a very long process, we used the provided speaker_attributes.parquet dataset. For each quote speaker, we extracted from this dataset his political party, educational level and nationality. We were also interested in the proportion of American politicians in the dataset so we calculated this variable for each year.
 
-Having Preprocessed our data, our plan is to now use Natural Language processing in order to extract information from the quotes and then cluster the quotes and see if we get different clusters for left and right or if we discover that there is no real difference in the "expressed sentiments"
-
+Having the preprocessing step, we will now use Natural Language Processing (NLP) to extract information from the quotes. After this, we will cluster the quotes in order to see if we get different clusters for left and right wings or, on the contrary, if we discover that there is no real difference between these ideologies.
 
 
+##################################################### Brouillon des anciens readme qu'on garde au cas ou
 we chose to filter the data by removing the unknown speaker, then we only get the quotes that have been said by a politician and we get from wikidata the political party, the educational degree and the nationality of the speaker.
 
 We can remove all quotations that don't have a speaker identified. We can also split the dataset by year, so that our analysis can be run just on a single year.
@@ -49,15 +48,11 @@ We also decided to add an educational level feature for each speaker and we deci
 - what’s in the data (formats, distributions, missing values, correlations, etc.).
 
 ## Timeline & Team Organization
-by 20 November
-
-Understand the distribution of the data depending on diffenrent parameters
-Week 2
-Apply the NLP 
-Week 3
-
-Week 4
-Cluster the data and make the conclusions
+* Week 1 : Understand the distribution of the data depending on different parameters.
+* Week 2 : Apply the NLP.
+* Week 3 :
+* Week 4 :
+* Week 5 : Cluster the data and conclude.
 
 ## Contributions 
 Aya Rahmoun

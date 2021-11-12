@@ -55,13 +55,10 @@ We also decided to add an educational level feature for each speaker and we deci
 * Week 5 : Cluster the data and conclude.
 
 ## Contributions 
-Aya Rahmoun
-
-Abdeslam Guessous
-
-Mortadha Abderrahim
-
-Louay Najar
+- Aya Rahmoun
+- Abdeslam Guessous
+- Louay Najar
+- Mortadha Abderrahim
 
 ## Questions for TAs 
 

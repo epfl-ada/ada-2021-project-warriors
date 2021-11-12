@@ -24,6 +24,10 @@ Such analysis could provide readers with more insights and background on a quote
 
 First, as we were dealing with a huge file (Quotebank), our first objective was to filter it in order to keep only the useful data, and to have a data in a manageable size. For this purpose, we decided to remove the following features : Proba, phase, urls, etc.(non-exhaustive list). As our interest was only about politicians, we filtered out all the quotes which were not written by politicians. To do so, we used the additional dataframe Wikidata for which more details are given below. 
 
+
+In order to get the country, the occupation, the political party, and the academic degree of each quotation’s speaker, we used the additional dataset extracted from  Wikidata. This was maybe the most challenging part of the preprocessing, as we had to find a solution which does not lead to a huge runtime. The first option considered was to use the API of Wikidata, using the QwikiData library. Unfortunately, even tough it was a feasible solution in theory, this was leading to unfeasible runtime (many hours). The second option (also not feasible) was based on a merge of the data frames ( from Wikidata and QuoteBank).   The third (and last) one was based on the observation that qIDs were unique values, and could then be considered as an index. We then kept only the politicians, as it was the only need of our topic. 
+
+
 In order to enrich our dataset, we decided to fetch the information from the wikidata API but, as it was a very long process,so changed to the provided speaker_attributes.parquet dataset. For each quote speaker, we extracted from this dataset his political party, educational level and nationality. We were also interested in the proportion of American politicians in the dataset so we calculated this variable for each year.
 
 Having the preprocessing step, we will now use Natural Language Processing (NLP) to extract information from the quotes. After this, we will cluster the quotes in order to see if we get different clusters for left and right wings or, on the contrary, if we discover that there is no real difference between these ideologies.

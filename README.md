@@ -23,7 +23,7 @@ show similarities in terms of that definition?
 ## Methods
 First, we started by filtering out the unknown in Quotebank dataset and the non-politicians using wikidata among other features. The filtering of only the non-politicians helped us filter our data by 7% for example.
 
-In order to enrich our dataset, we decided to fetch the information from the wikidata API but, as it was a very long process, we used the provided speaker_attributes.parquet dataset. For each quote speaker, we extracted from this dataset his political party, educational level and nationality. We were also interested in the proportion of American politicians in the dataset so we calculated this variable for each year.
+In order to enrich our dataset, we decided to fetch the information from the wikidata API but, as it was a very long process,so changed to the provided speaker_attributes.parquet dataset. For each quote speaker, we extracted from this dataset his political party, educational level and nationality. We were also interested in the proportion of American politicians in the dataset so we calculated this variable for each year.
 
 Having the preprocessing step, we will now use Natural Language Processing (NLP) to extract information from the quotes. After this, we will cluster the quotes in order to see if we get different clusters for left and right wings or, on the contrary, if we discover that there is no real difference between these ideologies.
 

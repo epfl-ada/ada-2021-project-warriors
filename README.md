@@ -23,7 +23,8 @@ show similarities in terms of that definition?
 ## Methods
 First,in order to have a managable dataset we chose to filter the quote bank data set in the following way:
 We deleted the quotes that have 'None' speakers, then we deleted the 'quoteID','numOccurrences','probas','urls'and'phase' columns since we do not need them for our analysis.
-In order to enrich our dataset we used the provided speaker_attributes.parquet dataset, for each quote speaker we extracted from this dataset his political party, educational level and nationality. We were also interested in the proportion of American politicians in the dataset so we calculated this variable for each year.
+
+In order to enrich our dataset we first wanted to fetch the information from the wikidata API but we saw that it took too long so we used the provided speaker_attributes.parquet dataset, for each quote speaker we extracted from this dataset his political party, educational level and nationality. We were also interested in the proportion of American politicians in the dataset so we calculated this variable for each year.
 
 Having Preprocessed our data, our plan is to now use Natural Language processing in order to extract information from the quotes and then cluster the quotes and see if we get different clusters for left and right or if we discover that there is no real difference in the "expressed sentiments"
 
@@ -48,13 +49,15 @@ We also decided to add an educational level feature for each speaker and we deci
 - what’s in the data (formats, distributions, missing values, correlations, etc.).
 
 ## Timeline & Team Organization
-Week 1
+by 20 November
 
+Understand the distribution of the data depending on diffenrent parameters
 Week 2
-
+Apply the NLP 
 Week 3
 
 Week 4
+Cluster the data and make the conclusions
 
 ## Contributions 
 Aya Rahmoun

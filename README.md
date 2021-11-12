@@ -10,7 +10,7 @@ Such analysis could provide readers with more insights and background on a quote
 ## Research Questions
 1. Does this quotes dataset show the differences and contrasts between right wing and left wing politicians ?
 2. How to define a similarity between politicians ? Can we derive such a measure of similarity ?
-3. According to this definition, do speakers with the same positionning show a higher level of similarity, or do they actually show the existence of sub-clusters? 
+3. According to this definition, do speakers with the same positionning show a higher level of similarity? 
 4. Clustering the speakers based on this measure, do these clusters match with the ideologic left/right separation ? 
 5. Through time, how the distance between these cluster evolve ? 
 6. How does the politicians speech vary depending on the educational degree?

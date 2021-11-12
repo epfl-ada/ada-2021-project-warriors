@@ -27,11 +27,9 @@ First, as we were dealing with a huge file (Quotebank), our first objective was 
 
 In order to enrich our dataset, we decided to fetch the data from the additional dataset Wikidata. The objective was to get the country, the occupation, the political party, and the academic degree of each quotation’s speaker. This was maybe the most challenging part of the preprocessing, as we had to find a solution which does not lead to a huge runtime. The first option considered was to use the API of Wikidata, using the QwikiData library. Unfortunately, even tough it was a feasible solution in theory, this was leading to unfeasible runtime (many hours). The second option (also not feasible) was based on a merge of the data frames ( from Wikidata and QuoteBank).  The third (and last) one was based on the observation that qIDs were unique values, and could then be considered as an index. We then kept only the politicians, as it was the only need of our topic. That way, this enabled to filter out the quotes which were not related to a politician, as mentioned above.  
 
-Finaly, in order to get closer to the data, we decided to do some visualisation , namely the distribution of the political parties over the quoters, and some statistical .
-
+Finaly, in order to get closer to the data, we decided to do some visualisation, namely the distribution of the political parties over the quoters, and some ratios.
 
 Having the preprocessing step, we will now use Natural Language Processing (NLP) to extract information from the quotes. After this, we will cluster the quotes in order to see if we get different clusters for left and right wings or, on the contrary, if we discover that there is no real difference between these ideologies.
-
 
 
 

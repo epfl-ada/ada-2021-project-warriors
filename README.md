@@ -53,11 +53,11 @@ We also decided to add an educational level feature for each speaker and we deci
 - what’s in the data (formats, distributions, missing values, correlations, etc.).
 
 ## Timeline & Team Organization
-* Week 1 : Understand the distribution of the data depending on different parameters.
-* Week 2 : Apply the NLP.
-* Week 3 :
-* Week 4 :
-* Week 5 : Cluster the data and conclude.
+* 19 novembre : Understand the different NLP techniques and choose a similarity metric based on that.
+* 26 novembre : Apply the NLP and the clustering.
+* 3 decembre : Through time, how the distance between these cluster evolve ?
+* 10 decembre  : Educational degree.
+* 17 decembre 5 : Conclusion.
 
 ## Contributions 
 - Aya Rahmoun

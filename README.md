@@ -8,12 +8,12 @@ Another aspect of this project is the study of the polarization throught the quo
 Such analysis could provide readers with more insights and background on a quote/text to better understand it and its ideology.
 
 ## Research Questions
-1. Are right wing and left wing politicians that different?
-2. How to define a similarity between politicians ? Do quotes whose speakers are similar in ideological background or political positioning
-show similarities in terms of that definition? 
-3. Can we design a data driven approach to cluster quotes matching with the ideologic left/right separation ? 
-4. Does the increase in polarisation result in an increase in political violence ?
-5. How does the politicians speech vary depending on the educational degree?
+1. Does this quotes dataset show the differences and contrasts between right wing and left wing politicians ?
+2. How to define a similarity between politicians ? Can we derive such a measure of similarity ?
+3. According to this definition, do speakers with the same positionning show a higher level of similarity ? 
+4. Clustering the speakers based on this measure, do these clusters match with the ideologic left/right separation ? 
+5. Through time, how the distance between these cluster evolve ? 
+6. How does the politicians speech vary depending on the educational degree?
 
 ## Proposed Datasets
 1. [Quotebank](https://quotebank.dlab.tools). This is the dataset from the course that will provide us speaker-attributed quotations. 

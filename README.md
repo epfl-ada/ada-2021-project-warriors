@@ -29,6 +29,7 @@ Finally, in order to get a better understanding of the data, we decided to do so
 Having the preprocessing step done, we will now use Natural Language Processing (NLP) to extract information from the quotes. After this, we will cluster the quotes in order to see if we get different clusters for left and right wings or, on the contrary, if we discover that there is no real difference between these ideologies.
 
 Please, note that the notebook provided is the output of our code ran on the 2017 dataset. 
+Link to generated Datasets: https://drive.google.com/drive/folders/1YEFlg6c92JPaKHY6pdl7OYabeDIW5cpf?usp=sharing
 
 ## Timeline 
 * 19 Novembre : Explore the different NLP techniques and choose a similarity metric based on that.

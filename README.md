@@ -21,14 +21,14 @@ show similarities in terms of that definition?
 2. [Wikidata](https://www.wikidata.org). This dataset will give us all the informations related to political speakers (political party, education, nationality...).
 
 ## Methods
-We chose to filter the data by removing the unknown speaker, then we only get the quotes that have been said by a politician and we get from wikidata the political party, the educational degree and the nationality of the speaker.
+First, we chose to filter the data by removing the unknown speaker, then we only get the quotes that have been said by a politician and we get from wikidata the political party, the educational degree and the nationality of the speaker.
 
 We can remove all quotations that don't have a speaker identified. We can also split the dataset by year, so that our analysis can be run just on a single year.
+
 The first step was to extract our data. We decided to split our data by year before loading it and to filter some information useless for our research. ######
 ################# We managed to load the data from both Quotebank and Wikidata. ############ A DVLPER For QuoteBank, we used the course
 code in the notebook and for Wikidata we used parquets ##############XX.  After this, we created a join in term of the ID in order to group the informations in both database. 
 
-### Preprocessing : 
 We chose to start by filtering out the unknown in Quotebank and the non-politicians using wikidata.
 We chose to quantify the distribution between Americans and Non Americans speakers in order to check if it was relevant to analyze the data only in the USA 
 and we came to the conclusion that ?????? ############ Quelle ccl ?

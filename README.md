@@ -15,9 +15,9 @@ show similarities in terms of that definition?
 5. Is there a difference in the language used by politicians who have a university degree and those who don’t ?
 
 ## Proposed Datasets
-1. Quotebank. This is the dataset from the course that will provide us speaker-attributed quotations. 
+1. [Quotebank](https://quotebank.dlab.tools). This is the dataset from the course that will provide us speaker-attributed quotations. 
 
-2. Wikidata. This dataset will give us all the informations related to political speakers (political party, education, nationality...).
+2. [Wikidata](https://www.wikidata.org). This dataset will give us all the informations related to political speakers (political party, education, nationality...).
 
 ## Methods
 We can remove all quotations that don't have a speaker identified. We can also split the dataset by year, so that our analysis can be run just on a single year.

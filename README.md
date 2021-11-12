@@ -4,7 +4,7 @@
 This paper reports the differences between left and right wing ideologies. They have distinct, and to an extent, contradictory opinions and even have different priorities. However, do their quotes reflect these fundamental disagreements? 
 We suggest clustering politicians based on the similarities in their quotes provided in the Quotebank to verify if we can conclude the ideology of a 
 quote speaker based on a data-driven approach. Labels from speakers' political ideology on wiki data could be used as the ground truth to assess our classifier. 
-Another aspect of this project is the analysis of the 
+Another aspect of this project is the study of the polarization throught the quotes.
 Such analysis could provide readers with more insights and background on a quote/text to better understand it and its ideology.
 
 ## Research Questions
@@ -13,7 +13,7 @@ Such analysis could provide readers with more insights and background on a quote
 show similarities in terms of that definition? 
 3. Can we design a data driven approach to cluster quotes matching with the ideologic left/right separation ? 
 4. Does the increase in polarisation result in an increase in political violence ?
-5. Is there a difference in the language used by politicians who have a university degree and those who don’t ?
+5. How does the politicians speech vary depending on the educational degree?
 
 ## Proposed Datasets
 1. [Quotebank](https://quotebank.dlab.tools). This is the dataset from the course that will provide us speaker-attributed quotations. 
@@ -21,6 +21,8 @@ show similarities in terms of that definition?
 2. [Wikidata](https://www.wikidata.org). This dataset will give us all the informations related to political speakers (political party, education, nationality...).
 
 ## Methods
+We chose to filter the data by removing the unknown speaker, then we only get the quotes that have been said by a politician and we get from wikidata the political party, the educational degree and the nationality of the speaker.
+
 We can remove all quotations that don't have a speaker identified. We can also split the dataset by year, so that our analysis can be run just on a single year.
 The first step was to extract our data. We decided to split our data by year before loading it and to filter some information useless for our research. ######
 ################# We managed to load the data from both Quotebank and Wikidata. ############ A DVLPER For QuoteBank, we used the course

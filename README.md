@@ -33,31 +33,16 @@ Finaly, in order to get closer to the data, we decided to do some visualisation 
 Having the preprocessing step, we will now use Natural Language Processing (NLP) to extract information from the quotes. After this, we will cluster the quotes in order to see if we get different clusters for left and right wings or, on the contrary, if we discover that there is no real difference between these ideologies.
 
 
-##################################################### Brouillon des anciens readme qu'on garde au cas ou
-we chose to filter the data by removing the unknown speaker, then we only get the quotes that have been said by a politician and we get from wikidata the political party, the educational degree and the nationality of the speaker.
 
-We can remove all quotations that don't have a speaker identified. We can also split the dataset by year, so that our analysis can be run just on a single year.
 
-The first step was to extract our data. We decided to split our data by year before loading it and to filter some information useless for our research. ######
-################# We managed to load the data from both Quotebank and Wikidata. ############ A DVLPER For QuoteBank, we used the course
-code in the notebook and for Wikidata we used parquets ##############XX.  After this, we created a join in term of the ID in order to group the informations in both database. 
 
-We chose to start by filtering out the unknown in Quotebank and the non-politicians using wikidata.
-We chose to quantify the distribution between Americans and Non Americans speakers in order to check if it was relevant to analyze the data only in the USA 
-and we came to the conclusion that ?????? ############ Quelle ccl ?
-We also decided to add an educational level feature for each speaker and we decided to study the distribution of this feature to see if it was reliable or not. 
-
-### Data Visualization ???? Va-t-on en faire ? 
-- distribution us non us : ratio 
-- ratio political or not 
-- what’s in the data (formats, distributions, missing values, correlations, etc.).
 
 ## Timeline & Team Organization
 * 19 novembre : Understand the different NLP techniques and choose a similarity metric based on that.
 * 26 novembre : Apply the NLP and the clustering.
 * 3 decembre : Through time, how the distance between these cluster evolve ?
 * 10 decembre  : Educational degree.
-* 17 decembre 5 : Conclusion.
+* 17 decembre : Conclusion.
 
 ## Contributions 
 - Aya Rahmoun

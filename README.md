@@ -17,12 +17,12 @@ Such analysis could provide readers with more insights and background on a quote
 
 ## Additional Datasets
 
-
+[Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page). This database provides additional features about the politicians.
 
 ## Methods
 
 
-First, as we were dealing with a huge file (Quotebank), our first objective was to filter it in order to keep only the useful data, and to have a data in a manageable size. For this purpose, we decided to remove the following features : Proba, phase, urls, etc.(non-exhaustive list). As our interest was only about politicians, we filtered out all the quotes which were not written by politicians. To do so, we used the additional dataframe Wikidata for which more details are given below. 
+First, as we were dealing with a huge file from Quotebank, our first objective was to filter it in order to keep only the useful data, and to have a data in a manageable size. For this purpose, we decided to remove the following features : Proba, phase, urls, etc.(non-exhaustive list). As our interest was only about politicians, we filtered out all the quotes which were not written by politicians. To do so, we used the additional dataframe Wikidata for which more details are given below. 
 
 
 In order to enrich our dataset, we decided to fetch the data from the additional dataset Wikidata. The objective was to get the country, the occupation, the political party, and the academic degree of each quotation’s speaker. This was maybe the most challenging part of the preprocessing, as we had to find a solution which does not lead to a huge runtime. The first option considered was to use the API of Wikidata, using the QwikiData library. Unfortunately, even tough it was a feasible solution in theory, this was leading to unfeasible runtime (many hours). The second option (also not feasible) was based on a merge of the data frames ( from Wikidata and QuoteBank).  The third (and last) one was based on the observation that qIDs were unique values, and could then be considered as an index. We then kept only the politicians, as it was the only need of our topic. That way, this enabled to filter out the quotes which were not related to a politician, as mentioned above.  
@@ -34,19 +34,19 @@ Having the preprocessing step, we will now use Natural Language Processing (NLP)
 
 
 
-
-## Timeline & Team Organization
+## Timeline 
 * 19 novembre : Understand the different NLP techniques and choose a similarity metric based on that.
 * 26 novembre : Apply the NLP and the clustering.
-* 3 decembre : Through time, how the distance between these cluster evolve ?
+* 3 decembre : Distance evolution through time between these cluster.
 * 10 decembre  : Educational degree.
 * 17 decembre : Conclusion.
 
-## Contributions 
-- Aya Rahmoun
-- Abdeslam Guessous
-- Louay Najar
-- Mortadha Abderrahim
+## Team Organization 
 
-## Questions for TAs 
+We do most of the work as a team but we still managed to separate some tasks. 
+
+- Aya Rahmoun : Understanding of the NLP techniques.
+- Abdeslam Guessous : Compare the different Machine Learning algorithms we could use.
+- Louay Najar : Classification of our data.
+- Mortadha Abderrahim : Analyze the results.
 

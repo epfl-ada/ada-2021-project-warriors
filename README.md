@@ -3,12 +3,13 @@
 ## Abstract
 This paper reports the differences between left and right wing ideologies. They have distinct, and to an extent, contradictory opinions and even have different priorities. However, do their quotes reflect these fundamental disagreements? 
 We suggest clustering politicians based on the similarities in their quotes provided in the Quotebank to verify if we can conclude the ideology of a 
-quote speaker based on a data-driven approach. Labels from speakers' political ideology on wiki data could be used as the ground truth to assess our classifier.   
+quote speaker based on a data-driven approach. Labels from speakers' political ideology on wiki data could be used as the ground truth to assess our classifier. 
+Another aspect of this project is the analysis of the 
 Such analysis could provide readers with more insights and background on a quote/text to better understand it and its ideology.
 
 ## Research Questions
 1. Are right wing and left wing politicians that different?
-2. How to define a similarity between politicans ? Do quotes whose speakers are similar in ideological background or political positioning
+2. How to define a similarity between politicians ? Do quotes whose speakers are similar in ideological background or political positioning
 show similarities in terms of that definition? 
 3. Can we design a data driven approach to cluster quotes matching with the ideologic left/right separation ? 
 4. Does the increase in polarisation result in an increase in political violence ?

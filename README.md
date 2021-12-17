@@ -24,11 +24,13 @@ First, as we were dealing with a huge file from Quotebank, our first objective w
 In order to enrich our dataset, we decided to fetch the data from the additional dataset Wikidata. The objective was to get the country, the occupation, the political party, and the academic degree of each quotation’s speaker. This was maybe the most challenging part of the preprocessing, as we had to find a solution which does not lead to a huge runtime. The first option considered was to use the API of Wikidata, using the QwikiData library. Unfortunately, even though it was a feasible solution in theory, this was leading to an unfeasible runtime (many hours). The second option (also not feasible) was based on a merge of the data frames ( from Wikidata and QuoteBank).  The third (and last) one was based on the observation that qIDs were unique values, and could then be considered as an index. This solution produced the correct solution within only a few minutes. In order to show that it was working properly, the code printed a periodic feedback (every 10^5 quotes read). We then kept only the politicians, as it was the only need of our topic. That way, this enabled to filter out the quotes which were not related to a politician, as mentioned above. Other difficulties were met, namely when finding many ids for one speaker. In order to fix that, we considered only the first id. 
   
 
-Finally, in order to get a better understanding of the data, we decided to do some visualisation. We started to plot the distribution of the political parties over the speakers, along with some ratios. For example, we found the percentage of American and non-American politicians in our data, which reinforced our choice of studying politicians in the USA.
+Finally, in order to get a better understanding of the data, we decided to do some visualisation. We started to plot the distribution of the political parties over the speakers, along with some ratios. For example, we found the percentage of American and non-American politicians in our data, which reinforced our choice of studying politicians in the USA. 
 
-Having the preprocessing step done, we will now use Natural Language Processing (NLP) to extract information from the quotes. After this, we will cluster the quotes in order to see if we get different clusters for left and right wings or, on the contrary, if we discover that there is no real difference between these ideologies.
-
-Please, note that the notebook provided is the output of our code ran on the 2017 dataset. 
+**Milestone3**
+We first tried to define a measure of closeness between the quotes, we tried to work with the Glove Model and use PCA to get a 2D visualisation but this tured out not to work so well.
+We  finally used LDA model to analyse the quotes after preprocessing them(removing punctuation, lower casing, removing stopwords, Lemmatization), this gave us the 20 most important topics, after assigning a topic to each quote, we analysed the sentiments of the quotes for specific topics that we found pertinent.
+We compared these sentiments between Democrats and republicans, and checked if their distributions and statistically different.
+We also analysed the importance accorded to the topics by republicans and democrats throught the percentage of the quotes regarding those topics.
 Link to generated Datasets: https://drive.google.com/drive/folders/1YEFlg6c92JPaKHY6pdl7OYabeDIW5cpf?usp=sharing
 
 ## Timeline 

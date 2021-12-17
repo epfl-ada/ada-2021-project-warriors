@@ -36,7 +36,6 @@ Link to generated Datasets: https://drive.google.com/drive/folders/1YEFlg6c92JPa
 * 19 Novembre : Explore the different NLP techniques and choose a similarity metric based on that.
 * 26 Novembre : Apply the NLP and the clustering.
 * 3 Decembre : Distance evolution through time between these clusters.
-* 10 Decembre  : Educational degree analysis.
 * 15 Decembre : Internal deadline, feedback and last updates.
 
 ## Team Organization 

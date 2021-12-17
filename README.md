@@ -4,12 +4,11 @@
 Political polarization, as defined in Wikipedia, is the extent to which opinions on an issue are opposed. It is assumed that polarization in the world in general, and in the US in particular, has been increasing over the past years. But, is it really the case? Has the polarization been always increasing over past years? In this project, we suggest a data-driven approach to quantify the polarization, and observe how it evolves over time. We explore the possibility of defining a similarity measure between politicians based on their quotes. Once we do this, we would like to study the difference between different political ideologies (mainly left and right) in order to see if there is a significant difference in their quotes.
 
 ## Research Questions
-1. Does this quote dataset show the differences and contrasts between right-wing and left-wing politicians ?
-2. How to define a similarity between politicians ? Can we derive such a measure of similarity ?
-3. According to this definition, do speakers with the same positioning show a higher level of similarity? 
+1. What are the main topics discussed by politicians ?
+2. Does this quote dataset show the differences and contrasts between right-wing and left-wing politicians ?
+3. How to define a similarity between politicians ? Can we derive such a measure of similarity ?
 4. Clustering the speakers based on this measure, do these clusters match with the ideological left/right separation ? 
 5. Through time, how the distance between these clusters evolve ? Can we relate this evolution to some major historic events ?
-6. How does the politicians speech vary depending on the educational degree?
 
 ## Additional Datasets
 

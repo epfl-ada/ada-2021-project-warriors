@@ -45,3 +45,6 @@ We do most of the work as a team but we still defined some task manager:
 * Abdeslam Guessous : Clustering after having defined the appropriate similarity measure. 
 * Louay Najar : Analysis of evolution through time and comparison to events.
 * Mortadha Abderrahim : NLP Implementation and general review.
+
+## Data Story link
+https://mortadha-abderrhim.github.io/warriors.github.io/

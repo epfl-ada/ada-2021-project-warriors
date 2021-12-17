@@ -25,7 +25,7 @@ In order to enrich our dataset, we decided to fetch the data from the additional
 
 Finally, in order to get a better understanding of the data, we decided to do some visualisation. We started to plot the distribution of the political parties over the speakers, along with some ratios. For example, we found the percentage of American and non-American politicians in our data, which reinforced our choice of studying politicians in the USA. 
 
-**Milestone3**
+**Milestone 3**
 We first tried to define a measure of closeness between the quotes, we tried to work with the Glove Model and use PCA to get a 2D visualisation but this tured out not to work so well.
 We  finally used LDA model to analyse the quotes after preprocessing them(removing punctuation, lower casing, removing stopwords, Lemmatization), this gave us the 20 most important topics, after assigning a topic to each quote, we analysed the sentiments of the quotes for specific topics that we found pertinent.
 We compared these sentiments between Democrats and republicans, and checked if their distributions and statistically different.
